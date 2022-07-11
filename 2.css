@@ -1,0 +1,134 @@
+body {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    font-family: 'Roboto';
+    font-style: normal;
+}
+.main_wrapper {
+    background: #C0DBD9;
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 15px;
+    color: #FFFFFF;
+}
+header {
+    background: #7FAFF7;
+    padding: 30px;
+}
+header a {
+    border: none;
+    border-radius: 5px;
+    background: #A5C7F9;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    padding: 8px 15px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+header a:hover {
+    opacity: 0.5;
+    background: purple;
+    transition: 400ms;
+}
+.main_content {
+    background: #B3F95A;
+    margin: 15px 0 15px;
+    counter-reset: e;
+}
+.high_content_wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.content_wrppaer {
+    display: flex;
+    justify-content: space-between;
+}
+.content::before {
+    height: 198px;
+    background: #8AD191;
+    font-weight: 400;
+    font-size: 53px;
+    line-height: 62px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    counter-increment: e;
+    content: counter(e);
+}
+.content {
+    width: 160px;
+}
+.frst {
+    flex-grow: 0.2;
+}
+.scnd {
+    flex-grow: 0.75;
+}
+.frth {
+    flex-grow: 0.98;
+}
+.second_content {
+    background: #88B5BF;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px 0 30px;
+    margin-bottom: 100px;
+}
+.second_content .container {
+    width: 255px;
+    height: 199px;
+    background: #0D89B0;
+}
+footer {
+    background: #7FAFF7;
+    display: flex;
+}
+.wrapper_for_future_content {
+    width: 1170px;
+    height: 100px;
+}
+.pop_up {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    width: 370px;
+    height: 370px;
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    top: 20%;
+    transition: opacity 500ms;
+    visibility: hidden;
+    background: #FFFFFF;
+}
+.pop_up:target {
+    visibility: visible;
+    opacity: 1;
+}
+.pop_up img {
+    width: 13px;
+    height: 23px;
+}
+.pop_up a {
+    width: 43px;
+    height: 39px;
+    background: #7FAFF6;
+    border-radius: 5px;
+    border: none;
+    align-self: flex-end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pop_up a:hover {
+    opacity: 0.5;
+    background: purple;
+    transition: 400ms;
+}
+.pop_up h1 {
+    margin-top: 115px;
+}
